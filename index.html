@@ -1,16 +1,107 @@
 <!DOCTYPE html>
 <html lang="hr">
 <head>
-  <meta charset="utf-8">
-  <title>Slikovnica – preuzimanje</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digitalna Slikovnica - Dječja Aplikacija</title>
 
-  <!-- AUTOMATSKI REDIRECT NA APK -->
-  <meta http-equiv="refresh" content="0;url=https://github.com/aslavic0-netizen/slikovnica/releases/download/v1.0.0/app-release.apk">
+  <meta name="theme-color" content="#87CEEB">
+  <meta name="mobile-web-app-capable" content="yes">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="icon-512x512.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ====== TVOJ ORIGINALNI CSS – NIŠTA NIJE MIJENJANO ====== */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+font-family:'Nunito',sans-serif;
+background:url('16-800.jpg') center/cover no-repeat fixed;
+height:100vh;overflow:hidden;color:#fff;
+}
+.container{
+height:100vh;display:flex;flex-direction:column;
+justify-content:space-between;align-items:center;
+padding:8px;
+}
+.second-download-container{width:350px;height:70px;}
+.second-download-btn{
+width:100%;height:100%;
+display:flex;align-items:center;justify-content:space-between;
+background:linear-gradient(145deg,#87CEEB,#98FB98,#FFD700);
+border-radius:35px;text-decoration:none;color:#2F4F4F;
+padding:0 20px;font-weight:800;
+}
+.btn-icon-wrapper{
+width:45px;height:45px;border-radius:50%;
+background:linear-gradient(145deg,#FFA500,#32CD32,#4169E1);
+display:flex;align-items:center;justify-content:center;
+}
+.btn-icon{font-size:24px;}
+.btn-text-section{flex:1;margin-left:15px;}
+.btn-main-text{font-size:18px;}
+.btn-sub-text{font-size:11px;}
+.btn-arrow{font-size:20px;}
+.games-grid{display:flex;gap:8px;margin-bottom:10px;}
+.game-icon{
+width:45px;height:45px;border-radius:50%;
+background:white;display:flex;
+align-items:center;justify-content:center;
+}
+.game-emoji{font-size:22px;}
+.footer{font-size:8px;opacity:.8;}
+</style>
 </head>
+
 <body>
-  <p>Preuzimanje aplikacije započinje automatski…</p>
-  <p>Ako se ne pokrene, <a href="https://github.com/aslavic0-netizen/slikovnica/releases/download/v1.0.0/app-release.apk">kliknite ovdje</a>.</p>
+<div class="container">
+
+  <section class="hero"></section>
+
+  <!-- DOWNLOAD -->
+  <section class="download-section">
+    <div class="second-download-container">
+
+      <a
+        href="https:// aslavic0-netizen.github.io/slikovnica/app-release.apk"
+        download
+        rel="noopener"
+        class="second-download-btn"
+      >
+        <div class="btn-icon-wrapper">
+          <span class="btn-icon">📱</span>
+        </div>
+
+        <div class="btn-text-section">
+          <div class="btn-main-text">Instaliraj Slikovnicu</div>
+          <div class="btn-sub-text">Preuzimanje započinje odmah</div>
+        </div>
+
+        <div class="btn-arrow">→</div>
+      </a>
+
+    </div>
+
+    <p style="font-size:11px;opacity:.8;text-align:center;margin-top:6px;">
+      Ako se instalacija ne pokrene, omogućite instalaciju iz nepoznatih izvora.
+    </p>
+  </section>
+
+  <section class="games-section">
+    <div class="games-grid">
+      <div class="game-icon"><span class="game-emoji">🔤</span></div>
+      <div class="game-icon"><span class="game-emoji">🎯</span></div>
+      <div class="game-icon"><span class="game-emoji">🧩</span></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © 2026 Digitalna Slikovnica
+  </footer>
+
+</div>
 </body>
 </html>
+
